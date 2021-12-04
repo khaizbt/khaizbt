@@ -1,1 +1,1 @@
-Jancuk
+Jancuk Tenan koi
