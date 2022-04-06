@@ -1,16 +1,46 @@
-### Hi there 👋
+```php
+<?php
 
-<!--
-**khaizbt/khaizbt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+namespace KhaizBadaruTammam;
 
-Here are some ideas to get you started:
+class About extends Me
+{
+    public function getCurrentWorkplace(): array
+    {
+        return [
+            'workplace' => [
+                'company' => 'Technopartner Indonesia',
+                'position' => 'Software Engineer'         
+            ]
+        ];
+    }
 
-- 🔭 I’m currently working on Technopartner Indonesia
-- 🌱 I’m currently learning Golang Advance
-- 👯 I’m looking to collaborate on Freelance Project
-- 🤔 I’m looking for help with Your Bug
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    public function getDailyKnowledge(): array
+    {
+        return [
+            //Programming Language
+            Php::class,
+            Javascript::class,
+            Laravel::class,
+            Go::class,
+            // Database
+            MySql::class,
+            MongoDB::class,
+            ElasticSearch::class,
+            
+            //Server
+            Docker::class,
+        ];
+    }
+
+    public function getFutureGoal(): string
+    {
+        return 'To contribute to open source.';
+    }
+    
+    public function getAvailableNow() : string 
+    {
+        return "I'm looking for freelance job";
+    }
+}
+```
