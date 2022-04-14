@@ -1,46 +1,46 @@
-```php
-<?php
+```go
+package overview
 
-namespace KhaizBadaruTammam;
-
-class About extends Me
-{
-    public function getCurrentWorkplace(): array
-    {
-        return [
-            'workplace' => [
-                'company' => 'Technopartner Indonesia',
-                'position' => 'Software Engineer'         
-            ]
-        ];
-    }
-
-    public function getDailyKnowledge(): array
-    {
-        return [
-            //Programming Language
-            Php::class,
-            Javascript::class,
-            Laravel::class,
-            Go::class,
-            // Database
-            MySql::class,
-            MongoDB::class,
-            ElasticSearch::class,
-            
-            //Server
-            Docker::class,
-        ];
-    }
-
-    public function getFutureGoal(): string
-    {
-        return 'To contribute to open source.';
-    }
-    
-    public function getAvailableNow() : string 
-    {
-        return "I'm looking for freelance job";
-    }
+func aboutMe() map[string]string {
+  return map[string]string{
+    "Name" : "Khaiz Badaru Tammam",
+    "LinkedIn" : "linkedin.com/in/khaizbt"
+  }
 }
+
+func getCurrentWorkplace() map[string]string {
+  return map[string]string {
+    "company" : "Technopartner Indonesia",
+    "position" : "Backend Engineer",
+  }
+}
+
+func getDailyKnowledge() map[string]interface{} {
+	return map[string]interface{}{
+		"Programming Language": []string{
+			"Golang",
+			"PHP (Laravel)",
+			"Javascript",
+		},
+		"Database": []string{
+			"MySQL",
+			"MongoDB",
+			"ElasticSearch",
+		},
+		"Other": []string{
+			"Docker",
+			"Problem Solving",
+			"Sistem Analyst",
+		},
+	}
+}
+
+func getFutureGoal() string {
+  return "To Contribute on Open Source"
+}
+
+func getAvailableNow() string {
+  return "I'm looking for Freelance Job"
+}
+
 ```
