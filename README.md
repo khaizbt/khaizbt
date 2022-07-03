@@ -10,7 +10,7 @@ func aboutMe() map[string]string {
 
 func getCurrentWorkplace() map[string]string {
 	return map[string]string{
-		"company":  "Technopartner Indonesia",
+		"company":  "PT Privy Identitas Digital",
 		"position": "Backend Engineer",
 	}
 }
@@ -26,6 +26,7 @@ func getDailyKnowledge() map[string]interface{} {
 			"MySQL",
 			"MongoDB",
 			"ElasticSearch",
+			"Redis"
 		},
 		"Other": []string{
 			"Docker",
