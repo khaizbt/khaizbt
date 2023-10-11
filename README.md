@@ -30,6 +30,7 @@ func getDailyKnowledge() map[string]interface{} {
 		},
 		"Other": []string{
 			"Docker",
+			"Pub/Sub",
 			"Problem Solving",
 			"Sistem Analyst",
 		},
