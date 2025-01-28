@@ -4,7 +4,7 @@ package overview
 func aboutMe() map[string]string {
 	return map[string]string{
 		"Name":     "Khaiz Badaru Tammam",
-		"LinkedIn": "linkedin.com/in/khaizbt",
+		"LinkedIn": "linkedin.com/in/khaiz",
 	}
 }
 
